@@ -114,6 +114,24 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-y",
+					"objectClass": "EnemySpawner",
+					"sid": 371479100534420,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "ViewportTop(\"Layer 0\")"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "EnemySpawner",
+					"sid": 961024225281604,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "ViewportBottom(\"Layer 0\")"
+					}
+				},
+				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
 					"sid": 828588800540433,
@@ -565,6 +583,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 164449466384047
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 932223173232839,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 113739283763715,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -598,6 +633,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 888089996565991
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 333615328602641,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 501612155775971,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 906677902923989
@@ -631,6 +683,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 564953287653916
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 493980042561577,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 567083115325000,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 769729652657458
@@ -797,12 +866,18 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 643140123085909,
+					"sid": 479258015751502,
 					"parameters": {
 						"first-value": "HeighestPoint",
-						"comparison": 3,
+						"comparison": 1,
 						"second-value": "LayoutHeight-Player.Y"
 					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 210512845544219,
+					"disabled": true
 				}
 			],
 			"actions": [
