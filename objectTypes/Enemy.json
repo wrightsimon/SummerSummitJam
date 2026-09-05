@@ -25,6 +25,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 125626577703562
+		},
+		{
+			"name": "SizeIncreaseAmount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 652588793315364
+		},
+		{
+			"name": "SizeDecreaseAmount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 874773471101542
 		}
 	],
 	"behaviorTypes": [

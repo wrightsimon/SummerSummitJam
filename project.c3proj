@@ -71,7 +71,8 @@
 			"Enemy",
 			"Keyboard",
 			"EnemySpawner",
-			"Scroller"
+			"Scroller",
+			"ColoredPlatform"
 		],
 		"subfolders": []
 	},
@@ -257,7 +258,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
-	"firstLayout": null
+	"viewportWidth": 1024,
+	"viewportHeight": 1366,
+	"firstLayout": "Main"
 }
