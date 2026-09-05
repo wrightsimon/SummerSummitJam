@@ -25,6 +25,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 822526615725006
+		},
+		{
+			"name": "ShouldLose",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 746050462464487
 		}
 	],
 	"behaviorTypes": [

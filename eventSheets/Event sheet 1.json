@@ -2,6 +2,26 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Lives",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 171633486363900
+		},
+		{
+			"eventType": "variable",
+			"name": "HeighestPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 860689135767865
+		},
+		{
 			"eventType": "comment",
 			"text": "Player Movement"
 		},
@@ -693,6 +713,198 @@
 				}
 			],
 			"sid": 201070462592001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 424682727967660,
+					"parameters": {
+						"object": "Hazard"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 712803981315336,
+					"parameters": {
+						"variable": "Lives",
+						"value": "Lives-1"
+					}
+				}
+			],
+			"sid": 990963609645845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-height",
+					"objectClass": "Player",
+					"sid": 403590357359746,
+					"parameters": {
+						"comparison": 3,
+						"height": "0"
+					}
+				},
+				{
+					"id": "compare-width",
+					"objectClass": "Player",
+					"sid": 754930522377998,
+					"parameters": {
+						"comparison": 3,
+						"width": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 679730902207164,
+					"parameters": {
+						"instance-variable": "ShouldLose",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 312342256814568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 835312819139649,
+					"parameters": {
+						"variable": "Lives",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 598738561087325,
+					"parameters": {
+						"instance-variable": "ShouldLose",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 705795602487688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 170326956871810
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 191569871763880,
+					"parameters": {
+						"variable": "HeighestPoint",
+						"value": "LayoutHeight-Player.Y"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 324187535628120,
+					"parameters": {
+						"text": "HeighestPoint"
+					}
+				}
+			],
+			"sid": 784246074701261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 853687005636291,
+					"parameters": {
+						"instance-variable": "ShouldLose"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 309299258594498
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 217256861027446
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 942909094234660,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 317895066677924
+				}
+			],
+			"sid": 632170584851732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "LivesText",
+					"sid": 828207978640218,
+					"parameters": {
+						"instance-variable": "LivesValue",
+						"comparison": 1,
+						"value": "Lives"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LivesText",
+					"sid": 342013357313721,
+					"parameters": {
+						"instance-variable": "LivesValue",
+						"value": "Lives"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "LivesText",
+					"sid": 645965959465231,
+					"parameters": {
+						"text": "LivesText.LivesValue"
+					}
+				}
+			],
+			"sid": 405464244025920
 		}
 	],
 	"sid": 805646571702529
