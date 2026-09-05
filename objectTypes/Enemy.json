@@ -4,7 +4,29 @@
 	"sid": 339628654241230,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ColorBlueValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 160361431634697
+		},
+		{
+			"name": "ColorGreenValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 791898667220050
+		},
+		{
+			"name": "ColorRedValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 125626577703562
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",

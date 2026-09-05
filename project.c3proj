@@ -29,6 +29,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside",
 			"author": "Scirra",
@@ -56,7 +70,8 @@
 			"Platform",
 			"Enemy",
 			"Keyboard",
-			"EnemySpawner"
+			"EnemySpawner",
+			"Scroller"
 		],
 		"subfolders": []
 	},

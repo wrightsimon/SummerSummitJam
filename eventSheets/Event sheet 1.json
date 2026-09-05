@@ -2,12 +2,17 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "Player Movement"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-on-screen",
 					"objectClass": "Player",
-					"sid": 882202954206834
+					"sid": 882202954206834,
+					"disabled": true
 				}
 			],
 			"actions": [
@@ -15,6 +20,7 @@
 					"id": "move-at-angle",
 					"objectClass": "Player",
 					"sid": 683687812251084,
+					"disabled": true,
 					"parameters": {
 						"angle": "270",
 						"distance": "1"
@@ -46,7 +52,8 @@
 					}
 				}
 			],
-			"sid": 215320395955552
+			"sid": 215320395955552,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -71,7 +78,8 @@
 					}
 				}
 			],
-			"sid": 702694191725064
+			"sid": 702694191725064,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -89,90 +97,373 @@
 			"sid": 463932673288775
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Enemy",
-					"sid": 891818339832226,
-					"parameters": {
-						"object": "Player"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-default-color",
-					"objectClass": "Player",
-					"sid": 796338449485275,
-					"parameters": {
-						"color": "Enemy.ColorValue"
-					}
-				}
-			],
-			"sid": 367201398859145
+			"eventType": "comment",
+			"text": "Enemy Spawning"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-animation-finished",
-					"objectClass": "EnemySpawner",
-					"sid": 134080639550685,
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 133299316898349,
 					"parameters": {
-						"animation": "\"Spawn\""
+						"object": "EnemySpawner"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 134453587239236,
+					"parameters": {
+						"interval-seconds": "1.0"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "spawn-another-object",
-					"objectClass": "EnemySpawner",
-					"sid": 616690565277199,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 156118096729807,
 					"parameters": {
-						"object": "Enemy",
+						"object-to-create": "Enemy",
 						"layer": "0",
-						"image-point": "0",
+						"x": "EnemySpawner.X",
+						"y": "EnemySpawner.Y",
 						"create-hierarchy": true,
 						"template-name": "\"\""
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 977098462219790,
+					"id": "set-instvar-value",
+					"objectClass": "Enemy",
+					"sid": 418179415756558,
 					"parameters": {
-						"object-to-create": "Enemy",
-						"layer": "0",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": true,
-						"template-name": "\"\""
+						"instance-variable": "ColorBlueValue",
+						"value": "EnemySpawner.ColorBlueValue"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy",
+					"sid": 692942332095031,
+					"parameters": {
+						"instance-variable": "ColorGreenValue",
+						"value": "EnemySpawner.ColorGreenValue"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy",
+					"sid": 913953431247218,
+					"parameters": {
+						"instance-variable": "ColorRedValue",
+						"value": "EnemySpawner.ColorRedValue"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "Enemy",
+					"sid": 274691149977596,
+					"parameters": {
+						"color": "rgbEx(Enemy.ColorRedValue, Enemy.ColorGreenValue, Enemy.ColorBlueValue)"
 					}
 				}
 			],
-			"sid": 503189861712309
+			"sid": 551211893591149
+		},
+		{
+			"eventType": "comment",
+			"text": "Enemy->Player Interaction"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-created",
+					"id": "on-collision-with-another-object",
 					"objectClass": "Enemy",
-					"sid": 875671099164884
+					"sid": 637326925231728,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 868345339009511,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 412560310382692,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"comparison": 0,
+								"value": "Enemy.ColorBlueValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy",
+							"sid": 427783828322111,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 206316727163099,
+							"parameters": {
+								"width": "Player.Width + 1",
+								"height": "Player.Height + 1"
+							}
+						}
+					],
+					"sid": 274462122704893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 729185850258408,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"comparison": 0,
+								"value": "Enemy.ColorGreenValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy",
+							"sid": 867804477544388,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 863594614634371,
+							"parameters": {
+								"width": "Player.Width + 1",
+								"height": "Player.Height + 1"
+							}
+						}
+					],
+					"sid": 426513261388954
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 890567210629262,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"comparison": 0,
+								"value": "Enemy.ColorRedValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy",
+							"sid": 932146438830223,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 775397267669640,
+							"parameters": {
+								"width": "Player.Width + 1",
+								"height": "Player.Height + 1"
+							}
+						}
+					],
+					"sid": 324785706900987
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 752869993070780,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"comparison": 1,
+								"value": "Enemy.ColorBlueValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 150751257863599,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"comparison": 1,
+								"value": "Enemy.ColorGreenValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 272408568957264,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"comparison": 1,
+								"value": "Enemy.ColorRedValue"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 746190348688944,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"value": "Enemy.ColorBlueValue"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 886912436611836,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"value": "Enemy.ColorGreenValue"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 436030833268042,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"value": "Enemy.ColorRedValue"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "Player",
+							"sid": 916588418475788,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
+						}
+					],
+					"sid": 155895720896342,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemy",
+							"sid": 169552458512766
+						}
+					],
+					"sid": 563459859239895
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Prevent Player from moving off screen (Bottom or Top)"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 996148302543076,
+					"parameters": {
+						"first-value": "ViewportTop(\"Layer 0\")",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Player",
+					"sid": 587933579653716,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "ViewportBottom(\"Layer 0\")"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-default-color",
-					"objectClass": "Enemy",
-					"sid": 851875874053425,
+					"id": "set-y",
+					"objectClass": "Player",
+					"sid": 785292357596094,
 					"parameters": {
-						"color": "rgbEx(EnemySpawner.ColorRedValue, EnemySpawner.ColorGreenValue, EnemySpawner.ColorBlueValue)"
+						"y": "ViewportBottom(\"Layer 0\")"
 					}
 				}
 			],
-			"sid": 678955907574947
+			"sid": 837428275041343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 807561041826782,
+					"parameters": {
+						"first-value": "ViewportTop(\"Layer 0\")",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Player",
+					"sid": 658246848853656,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "Scroller.Y"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Player",
+					"sid": 193122893573267,
+					"parameters": {
+						"y": "Scroller.Y"
+					}
+				}
+			],
+			"sid": 469497625545435
 		}
 	],
 	"sid": 805646571702529

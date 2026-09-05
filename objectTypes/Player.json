@@ -29,14 +29,19 @@
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 380868547343157
-		},
-		{
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 451021209298917
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 516766701410933
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 460053159166321
 		}
 	],
 	"effectTypes": [],
