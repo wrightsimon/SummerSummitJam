@@ -21,6 +21,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -80,7 +87,8 @@
 			"EnemySpawner",
 			"Scroller",
 			"ColoredPlatform",
-			"PlayerOutline"
+			"PlayerOutline",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
