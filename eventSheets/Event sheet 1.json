@@ -232,6 +232,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 676852113195566,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 274462122704893
@@ -269,6 +278,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 313543785914556,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 426513261388954
@@ -305,6 +323,15 @@
 							"parameters": {
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 321395945668773,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
 							}
 						}
 					],
@@ -374,8 +401,8 @@
 						},
 						{
 							"id": "set-default-color",
-							"objectClass": "Player",
-							"sid": 916588418475788,
+							"objectClass": "PlayerOutline",
+							"sid": 248819686208201,
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
