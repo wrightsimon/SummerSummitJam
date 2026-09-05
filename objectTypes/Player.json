@@ -32,6 +32,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 746050462464487
+		},
+		{
+			"name": "Lives",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 660965769212510
 		}
 	],
 	"behaviorTypes": [
