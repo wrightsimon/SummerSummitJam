@@ -1,15 +1,15 @@
 {
-	"name": "Obstacle",
+	"name": "PlayerOutline",
 	"plugin-id": "Sprite",
-	"sid": 725673910323938,
+	"sid": 746741262321042,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 695315632300270
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 255501680810891
 		}
 	],
 	"effectTypes": [],
@@ -26,25 +26,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8043907,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.4540000000000002,
-								1,
-								0.46400000000000025,
-								1,
-								0.6639999999999997,
-								0,
-								0.6539999999999997
-							]
-						},
+						"imageSpriteId": 884581,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 348901546501221,
+				"sid": 924309197501302,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
