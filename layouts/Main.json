@@ -18,7 +18,11 @@
 					"uid": 2,
 					"sid": 497017153536048,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ColorRedValue": 0,
+						"ColorGreenValue": 0,
+						"ColorBlueValue": 0
+					},
 					"behaviors": {
 						"ScrollTo": {
 							"properties": {
@@ -31,24 +35,13 @@
 								"use-instance-tags": true,
 								"tags": ""
 							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": true,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
 						}
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 660,
-						"y": 636,
+						"x": 656,
+						"y": 523,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
@@ -60,7 +53,7 @@
 							1
 						],
 						"z": 0,
-						"angle": 4.710377922261248
+						"angle": 0
 					}
 				},
 				{
@@ -131,6 +124,93 @@
 					"world": {
 						"x": 126,
 						"y": -25,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"sid": 559326459849613,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 125,
+						"y": 195,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							0,
+							0,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "EnemySpawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Spawn",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"sid": 175995540989491,
+					"tags": "",
+					"instanceVariables": {
+						"ColorRedValue": 0,
+						"ColorGreenValue": 0,
+						"ColorBlueValue": 255
+					},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 322,
+						"y": 437,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,

@@ -1,7 +1,7 @@
 {
-	"name": "Player",
+	"name": "EnemySpawner",
 	"plugin-id": "Sprite",
-	"sid": 529454844429722,
+	"sid": 147109914540674,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,35 +10,24 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 264578261770034
+			"sid": 574081476528479
 		},
 		{
 			"name": "ColorGreenValue",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 825070368978782
+			"sid": 391087239076031
 		},
 		{
 			"name": "ColorBlueValue",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 822526615725006
+			"sid": 801036403954571
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 380868547343157
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 451021209298917
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -53,27 +42,15 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5170367,
-						"collisionPoly": {
-							"points": [
-								0.2560000000000001,
-								0.21000000000000008,
-								0.7879999999999998,
-								0.21200000000000008,
-								0.7319999999999998,
-								0.6399999999999997,
-								0.2420000000000001,
-								0.6619999999999997
-							]
-						},
+						"imageSpriteId": 5138802,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 572207258407254,
-				"name": "Animation 1",
-				"isLooping": false,
+				"sid": 867833609003311,
+				"name": "Spawn",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

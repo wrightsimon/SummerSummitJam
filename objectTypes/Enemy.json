@@ -1,15 +1,20 @@
 {
-	"name": "Platform",
+	"name": "Enemy",
 	"plugin-id": "Sprite",
-	"sid": 725673910323938,
+	"sid": 339628654241230,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 695315632300270
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 943057320277977
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutside",
+			"sid": 116625410351982
 		}
 	],
 	"effectTypes": [],
@@ -26,17 +31,17 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8043907,
+						"imageSpriteId": 658560,
 						"collisionPoly": {
 							"points": [
-								0.13400000000000004,
-								0.31400000000000006,
-								0.998,
-								0.48000000000000026,
-								1,
-								0.6639999999999997,
-								0.13200000000000003,
-								0.4179999999999995
+								0.24200000000000005,
+								0.20800000000000002,
+								0.7999999999999998,
+								0.24400000000000008,
+								0.7599999999999998,
+								0.6719999999999997,
+								0.238,
+								0.6479999999999997
 							]
 						},
 						"useCollisionPoly": true,
@@ -44,7 +49,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 348901546501221,
+				"sid": 414611254819465,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

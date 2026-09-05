@@ -10,8 +10,68 @@
 					"sid": 882202954206834
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player",
+					"sid": 683687812251084,
+					"parameters": {
+						"angle": "270",
+						"distance": "1"
+					}
+				}
+			],
 			"sid": 218428555677888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 700828241581345,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player",
+					"sid": 530363385443343,
+					"parameters": {
+						"angle": "0",
+						"distance": "1"
+					}
+				}
+			],
+			"sid": 215320395955552
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 374327816162388,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player",
+					"sid": 420988431214416,
+					"parameters": {
+						"angle": "180",
+						"distance": "1"
+					}
+				}
+			],
+			"sid": 702694191725064
 		},
 		{
 			"eventType": "block",
@@ -19,24 +79,100 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
-					"sid": 272260374922210,
+					"sid": 273855778803810,
 					"parameters": {
 						"object": "Platform"
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 463932673288775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"id": "set-enabled",
-					"objectClass": "Player",
-					"sid": 547720180161068,
-					"behaviorType": "Bullet",
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 891818339832226,
 					"parameters": {
-						"state": "disabled"
+						"object": "Player"
 					}
 				}
 			],
-			"sid": 422945664810101
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Player",
+					"sid": 796338449485275,
+					"parameters": {
+						"color": "Enemy.ColorValue"
+					}
+				}
+			],
+			"sid": 367201398859145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "EnemySpawner",
+					"sid": 134080639550685,
+					"parameters": {
+						"animation": "\"Spawn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "EnemySpawner",
+					"sid": 616690565277199,
+					"parameters": {
+						"object": "Enemy",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 977098462219790,
+					"parameters": {
+						"object-to-create": "Enemy",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 503189861712309
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Enemy",
+					"sid": 875671099164884
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Enemy",
+					"sid": 851875874053425,
+					"parameters": {
+						"color": "rgbEx(EnemySpawner.ColorRedValue, EnemySpawner.ColorGreenValue, EnemySpawner.ColorBlueValue)"
+					}
+				}
+			],
+			"sid": 678955907574947
 		}
 	],
 	"sid": 805646571702529
