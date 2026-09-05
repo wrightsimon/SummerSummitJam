@@ -398,9 +398,36 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "destroy",
+							"id": "set-position-to-another-object",
 							"objectClass": "Enemy",
-							"sid": 169552458512766
+							"sid": 674407778327386,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Enemy",
+							"sid": 596336769093593,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy",
+							"sid": 737895987196334,
+							"parameters": {
+								"state": "mirrored"
+							}
 						}
 					],
 					"sid": 563459859239895
