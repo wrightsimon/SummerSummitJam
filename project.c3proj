@@ -5,10 +5,42 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
 	"uniqueId": "zw8ud2k33c3",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Player",
+			"Platform"
+		],
 		"subfolders": []
 	},
 	"functionsName": "Functions",
@@ -20,7 +52,7 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Main"
 		],
 		"subfolders": []
 	},

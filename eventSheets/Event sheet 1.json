@@ -1,5 +1,43 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "Player",
+					"sid": 882202954206834
+				}
+			],
+			"actions": [],
+			"sid": 218428555677888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 272260374922210,
+					"parameters": {
+						"object": "Platform"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 547720180161068,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 422945664810101
+		}
+	],
 	"sid": 805646571702529
 }
