@@ -81,7 +81,7 @@
 	"objectTypes": {
 		"items": [
 			"Player",
-			"Platform",
+			"Obstacle",
 			"Enemy",
 			"Keyboard",
 			"EnemySpawner",
