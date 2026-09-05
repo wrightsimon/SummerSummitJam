@@ -398,36 +398,9 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "set-position-to-another-object",
+							"id": "destroy",
 							"objectClass": "Enemy",
-							"sid": 674407778327386,
-							"parameters": {
-								"object": "Player",
-								"image-point-optional": "0"
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Enemy",
-							"sid": 596336769093593,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy",
-							"sid": 737895987196334,
-							"parameters": {
-								"state": "mirrored"
-							}
+							"sid": 169552458512766
 						}
 					],
 					"sid": 563459859239895
@@ -647,6 +620,52 @@
 				}
 			],
 			"sid": 486522346500329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PlayerOutline",
+					"sid": 905528794881166
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerOutline",
+					"sid": 925120520725269,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerOutline",
+					"sid": 871900158266758,
+					"parameters": {
+						"width": "Player.Width",
+						"height": "Player.Height"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "PlayerOutline",
+					"sid": 264861314194917,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 201070462592001
 		}
 	],
 	"sid": 805646571702529
