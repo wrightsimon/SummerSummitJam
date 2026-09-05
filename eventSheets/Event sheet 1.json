@@ -3,16 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "Lives",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 171633486363900
-		},
-		{
-			"eventType": "variable",
 			"name": "HeighestPoint",
 			"type": "number",
 			"initialValue": "0",
@@ -728,12 +718,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 712803981315336,
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 617328712260749,
 					"parameters": {
-						"variable": "Lives",
-						"value": "Lives-1"
+						"instance-variable": "Lives",
+						"value": "-1"
 					}
 				}
 			],
@@ -778,11 +768,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 835312819139649,
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 621992097396256,
 					"parameters": {
-						"variable": "Lives",
+						"instance-variable": "Lives",
 						"comparison": 3,
 						"value": "0"
 					}
@@ -805,9 +795,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 170326956871810
+					"sid": 643140123085909,
+					"parameters": {
+						"first-value": "HeighestPoint",
+						"comparison": 3,
+						"second-value": "LayoutHeight-Player.Y"
+					}
 				}
 			],
 			"actions": [
@@ -877,11 +872,11 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "LivesText",
-					"sid": 828207978640218,
+					"sid": 136297027316940,
 					"parameters": {
 						"instance-variable": "LivesValue",
 						"comparison": 1,
-						"value": "Lives"
+						"value": "Player.Lives"
 					}
 				}
 			],
@@ -889,10 +884,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "LivesText",
-					"sid": 342013357313721,
+					"sid": 519969094436121,
 					"parameters": {
 						"instance-variable": "LivesValue",
-						"value": "Lives"
+						"value": "Player.Lives"
 					}
 				},
 				{
@@ -905,6 +900,27 @@
 				}
 			],
 			"sid": 405464244025920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 179747348519407,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 845987737339319
+				}
+			],
+			"sid": 438607126965656
 		}
 	],
 	"sid": 805646571702529
