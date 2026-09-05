@@ -89,7 +89,7 @@
 					"objectClass": "Player",
 					"sid": 273855778803810,
 					"parameters": {
-						"object": "Platform"
+						"object": "Obstacle"
 					}
 				}
 			],
@@ -472,7 +472,8 @@
 					}
 				}
 			],
-			"sid": 837428275041343
+			"sid": 837428275041343,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -507,7 +508,8 @@
 					}
 				}
 			],
-			"sid": 469497625545435
+			"sid": 469497625545435,
+			"disabled": true
 		},
 		{
 			"eventType": "block",

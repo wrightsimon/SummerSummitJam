@@ -113,7 +113,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -154,7 +154,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -356,7 +356,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -397,7 +397,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -780,7 +780,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -821,7 +821,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -912,7 +912,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -953,7 +953,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -994,7 +994,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -1035,7 +1035,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -1076,7 +1076,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -1117,7 +1117,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -1158,7 +1158,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
@@ -1199,7 +1199,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "block_1",
