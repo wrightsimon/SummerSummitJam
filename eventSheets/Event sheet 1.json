@@ -89,7 +89,7 @@
 					"objectClass": "Player",
 					"sid": 273855778803810,
 					"parameters": {
-						"object": "Platform"
+						"object": "Obstacle"
 					}
 				}
 			],
@@ -232,6 +232,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 676852113195566,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 274462122704893
@@ -269,6 +278,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 313543785914556,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 426513261388954
@@ -305,6 +323,15 @@
 							"parameters": {
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 321395945668773,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
 							}
 						}
 					],
@@ -374,8 +401,8 @@
 						},
 						{
 							"id": "set-default-color",
-							"objectClass": "Player",
-							"sid": 916588418475788,
+							"objectClass": "PlayerOutline",
+							"sid": 248819686208201,
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
@@ -445,7 +472,8 @@
 					}
 				}
 			],
-			"sid": 837428275041343
+			"sid": 837428275041343,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -480,7 +508,8 @@
 					}
 				}
 			],
-			"sid": 469497625545435
+			"sid": 469497625545435,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -618,6 +647,52 @@
 				}
 			],
 			"sid": 486522346500329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PlayerOutline",
+					"sid": 905528794881166
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerOutline",
+					"sid": 925120520725269,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerOutline",
+					"sid": 871900158266758,
+					"parameters": {
+						"width": "Player.Width",
+						"height": "Player.Height"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "PlayerOutline",
+					"sid": 264861314194917,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 201070462592001
 		}
 	],
 	"sid": 805646571702529

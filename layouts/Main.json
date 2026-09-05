@@ -55,8 +55,8 @@
 					"world": {
 						"x": 512,
 						"y": 4976,
-						"width": 250,
-						"height": 250,
+						"width": 256,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -70,7 +70,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -96,8 +96,8 @@
 					"world": {
 						"x": 536,
 						"y": 4361,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -137,8 +137,8 @@
 					"world": {
 						"x": 133,
 						"y": 4351,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -243,8 +243,8 @@
 					"world": {
 						"x": -224,
 						"y": 4969,
-						"width": 250,
-						"height": 250,
+						"width": 256,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -308,7 +308,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -334,8 +334,8 @@
 					"world": {
 						"x": 385,
 						"y": 3851,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -349,7 +349,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -375,8 +375,8 @@
 					"world": {
 						"x": 635,
 						"y": 3851,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -405,7 +405,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -443,7 +443,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -481,7 +481,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -519,7 +519,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -557,7 +557,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 0,
 						"ColorBlueValue": 255,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -595,7 +595,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -633,7 +633,7 @@
 						"ColorRedValue": 255,
 						"ColorGreenValue": 0,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -671,7 +671,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 0,
 						"ColorBlueValue": 255,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -709,7 +709,7 @@
 						"ColorRedValue": 0,
 						"ColorGreenValue": 255,
 						"ColorBlueValue": 0,
-						"SpawnTime": 1
+						"SpawnTime": 2
 					},
 					"behaviors": {},
 					"showing": true,
@@ -732,7 +732,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -758,8 +758,8 @@
 					"world": {
 						"x": 875,
 						"y": 2813,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -773,7 +773,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -799,8 +799,8 @@
 					"world": {
 						"x": 541,
 						"y": 2810,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -864,7 +864,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -890,8 +890,8 @@
 					"world": {
 						"x": 258,
 						"y": 3297,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -905,7 +905,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -931,8 +931,8 @@
 					"world": {
 						"x": 777,
 						"y": 3316,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -946,7 +946,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -972,8 +972,8 @@
 					"world": {
 						"x": 258,
 						"y": 214,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -987,7 +987,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1013,8 +1013,8 @@
 					"world": {
 						"x": 777,
 						"y": 233,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1028,7 +1028,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1054,8 +1054,8 @@
 					"world": {
 						"x": 390,
 						"y": 2292,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1069,7 +1069,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1095,8 +1095,8 @@
 					"world": {
 						"x": 640,
 						"y": 2292,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1110,7 +1110,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1136,8 +1136,8 @@
 					"world": {
 						"x": 125,
 						"y": 1766,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1151,7 +1151,7 @@
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1177,58 +1177,8 @@
 					"world": {
 						"x": 899,
 						"y": 1771,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "ColoredPlatform",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 31,
-					"sid": 857518754514107,
-					"tags": "",
-					"instanceVariables": {
-						"ColorBlueValue": 0,
-						"ColorGreenValue": 255,
-						"ColorRedValue": 0
-					},
-					"behaviors": {
-						"DestroyOutside": {
-							"properties": {
-								"region": "layout"
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1076,
-						"y": 3342,
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1300,56 +1250,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 33,
-					"sid": 562939503156711,
-					"tags": "",
-					"instanceVariables": {
-						"ColorBlueValue": 0,
-						"ColorGreenValue": 255,
-						"ColorRedValue": 0
-					},
-					"behaviors": {
-						"DestroyOutside": {
-							"properties": {
-								"region": "layout"
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1340,
-						"y": 3344,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "ColoredPlatform",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 34,
 					"sid": 348932025882221,
 					"tags": "",
@@ -1389,6 +1289,97 @@
 						],
 						"z": 0,
 						"angle": 0
+					}
+				},
+				{
+					"type": "PlayerOutline",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 35,
+					"sid": 312918251338630,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": true
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 510,
+						"y": 4973,
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 36,
+					"sid": 686567299792347,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 32,
+							"height": 160,
+							"max-width": 32,
+							"max-height": 160,
+							"data": "5120x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1024,
+						"height": 5120,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0
 					}
 				}
 			],

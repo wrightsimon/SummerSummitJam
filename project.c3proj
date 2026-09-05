@@ -21,6 +21,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -31,6 +38,13 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -67,12 +81,14 @@
 	"objectTypes": {
 		"items": [
 			"Player",
-			"Platform",
+			"Obstacle",
 			"Enemy",
 			"Keyboard",
 			"EnemySpawner",
 			"Scroller",
-			"ColoredPlatform"
+			"ColoredPlatform",
+			"PlayerOutline",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
