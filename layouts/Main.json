@@ -212,7 +212,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 10,
+								"speed": 50,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -1283,8 +1283,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 375,
-						"y": 1791,
+						"x": 363,
+						"y": 1786,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
