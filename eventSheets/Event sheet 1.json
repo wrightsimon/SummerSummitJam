@@ -456,6 +456,17 @@
 							"id": "destroy",
 							"objectClass": "Enemy",
 							"sid": 169552458512766
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 424277367418788,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
 						}
 					],
 					"sid": 563459859239895
