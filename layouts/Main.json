@@ -1803,7 +1803,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 128,
+						"x": 192,
 						"y": 4350,
 						"width": 128,
 						"height": 128,
@@ -2112,7 +2112,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 896,
+						"x": 832,
 						"y": 4355,
 						"width": 128,
 						"height": 128,
@@ -2681,7 +2681,7 @@
 					"locked": false,
 					"world": {
 						"x": 639,
-						"y": 4008,
+						"y": 3840,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -2717,7 +2717,7 @@
 					"locked": false,
 					"world": {
 						"x": 387,
-						"y": 4013,
+						"y": 3840,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
