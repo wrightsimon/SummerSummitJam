@@ -1136,9 +1136,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "ScoreText",
-					"sid": 799593119392846,
+					"sid": 608753037990266,
 					"parameters": {
-						"text": "floor(HeighestPoint)"
+						"text": "\"Score: \" &floor(HeighestPoint)"
 					}
 				}
 			],
@@ -1242,9 +1242,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "LivesText",
-					"sid": 645965959465231,
+					"sid": 135469100038351,
 					"parameters": {
-						"text": "LivesText.LivesValue"
+						"text": "\"Lives: \" & LivesText.LivesValue"
 					}
 				}
 			],
@@ -1337,6 +1337,30 @@
 				}
 			],
 			"sid": 302550562941951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 283140478154465,
+					"parameters": {
+						"object": "theend"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 117974998231115,
+					"parameters": {
+						"layout": "Final Screen"
+					}
+				}
+			],
+			"sid": 917249008515821
 		}
 	],
 	"sid": 805646571702529
