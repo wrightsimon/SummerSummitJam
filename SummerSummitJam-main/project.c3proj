@@ -85,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to",
 			"author": "Scirra",
@@ -157,8 +164,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Main",
-			"Final Screen"
+			"Final Screen",
+			"Main"
 		],
 		"subfolders": []
 	},
@@ -428,6 +435,14 @@
 					"name": "v2_s7.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 713667371380209,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game_starting.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 255365522533002,
 					"file-info": {
 						"purpose": "none"
 					}

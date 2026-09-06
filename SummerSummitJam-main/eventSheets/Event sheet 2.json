@@ -1,5 +1,95 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 817725109410323
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 125338729291931,
+					"parameters": {
+						"audio-file": {
+							"path": "bgm"
+						},
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 372937449610225
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 552616514173876
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 292937120882236,
+					"parameters": {
+						"audio-file": {
+							"path": "game_starting"
+						},
+						"loop": "not-looping",
+						"volume": "-30",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pressanykey",
+					"sid": 302694614492512,
+					"parameters": {
+						"animation": "\"keypressed\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "pressanykey",
+					"sid": 370747746556398,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 320657484105927,
+					"parameters": {
+						"seconds": "2.7",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 880507329400932,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 600566474656208
+		}
+	],
 	"sid": 392550452801510
 }
