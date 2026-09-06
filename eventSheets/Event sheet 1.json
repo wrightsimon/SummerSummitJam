@@ -1007,6 +1007,30 @@
 				}
 			],
 			"sid": 438607126965656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 154600609668458,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 926274392374033,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 932520499888920
 		}
 	],
 	"sid": 805646571702529

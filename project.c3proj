@@ -113,7 +113,17 @@
 			"TiledBackground",
 			"Hazard",
 			"ScoreText",
+<<<<<<< Updated upstream
 			"LivesText"
+=======
+			"LivesText",
+			"3DShape",
+			"ColoredPlatform2",
+			"neurons",
+			"TiledBackground2",
+			"Sprite",
+			"WinText"
+>>>>>>> Stashed changes
 		],
 		"subfolders": []
 	},
@@ -126,13 +136,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Main"
+			"Main",
+			"Final Screen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
