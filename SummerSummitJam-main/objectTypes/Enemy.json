@@ -1,0 +1,117 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 339628654241230,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ColorBlueValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 160361431634697
+		},
+		{
+			"name": "ColorGreenValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 791898667220050
+		},
+		{
+			"name": "ColorRedValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 125626577703562
+		},
+		{
+			"name": "SizeIncreaseAmount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 652588793315364
+		},
+		{
+			"name": "SizeDecreaseAmount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 874773471101542
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 943057320277977
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutside",
+			"sid": 116625410351982
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 658560,
+						"collisionPoly": {
+							"points": [
+								0.52734375,
+								0.2890625,
+								0.73828125,
+								0.296875,
+								0.84765625,
+								0.39453125,
+								0.890625,
+								0.515625,
+								0.890625,
+								0.6015625,
+								0.8515625,
+								0.67578125,
+								0.703125,
+								0.734375,
+								0.296875,
+								0.78125,
+								0.15234375,
+								0.75,
+								0.109375,
+								0.71484375,
+								0.0546875,
+								0.53125,
+								0.16796875,
+								0.36328125,
+								0.30859375,
+								0.30078125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 414611254819465,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"name": "EnemySpawner",
+	"plugin-id": "Sprite",
+	"sid": 147109914540674,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ColorRedValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 574081476528479
+		},
+		{
+			"name": "ColorGreenValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 391087239076031
+		},
+		{
+			"name": "ColorBlueValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 801036403954571
+		},
+		{
+			"name": "SpawnTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 330660968030146
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5138802,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 867833609003311,
+				"name": "Spawn",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
