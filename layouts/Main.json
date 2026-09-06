@@ -485,7 +485,7 @@
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge",
-								"region": "viewport"
+								"region": "layout"
 							}
 						},
 						"8Direction": {
@@ -1882,7 +1882,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 510,
+						"x": 512,
 						"y": 4973,
 						"width": 128,
 						"height": 128,
