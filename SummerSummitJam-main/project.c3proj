@@ -15,13 +15,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Shape3D",
-			"name": "3D shape",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -103,13 +96,6 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "wrap",
-			"name": "Wrap",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "zw8ud2k33c3",
@@ -127,11 +113,7 @@
 			"TiledBackground",
 			"Hazard",
 			"ScoreText",
-			"LivesText",
-			"Tilemap",
-			"3DShape",
-			"TiledBackground2",
-			"neurons"
+			"LivesText"
 		],
 		"subfolders": []
 	},
@@ -275,7 +257,7 @@
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "high",
+		"fullscreenQuality": "low",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -296,7 +278,7 @@
 			1,
 			0
 		],
-		"orientations": "any",
+		"orientations": "landscape",
 		"webgpu": "auto",
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
@@ -318,6 +300,6 @@
 		"scriptsType": "module"
 	},
 	"viewportWidth": 1024,
-	"viewportHeight": 612,
+	"viewportHeight": 1366,
 	"firstLayout": "Main"
 }
