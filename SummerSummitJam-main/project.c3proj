@@ -134,7 +134,9 @@
 			"TiledBackground2",
 			"EndText",
 			"mindful_logo",
-			"pressanykey"
+			"pressanykey",
+			"theend",
+			"clouds"
 		],
 		"subfolders": []
 	},
