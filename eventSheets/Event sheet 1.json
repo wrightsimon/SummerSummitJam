@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "HeighestPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 860689135767865
+		},
+		{
 			"eventType": "comment",
 			"text": "Player Movement"
 		},
@@ -89,7 +99,7 @@
 					"objectClass": "Player",
 					"sid": 273855778803810,
 					"parameters": {
-						"object": "Platform"
+						"object": "Obstacle"
 					}
 				}
 			],
@@ -103,6 +113,24 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "EnemySpawner",
+					"sid": 371479100534420,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "ViewportTop(\"Layer 0\")"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "EnemySpawner",
+					"sid": 961024225281604,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "ViewportBottom(\"Layer 0\")"
+					}
+				},
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
@@ -232,6 +260,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 676852113195566,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 274462122704893
@@ -269,6 +306,15 @@
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
 							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 313543785914556,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
+							}
 						}
 					],
 					"sid": 426513261388954
@@ -305,6 +351,15 @@
 							"parameters": {
 								"width": "Player.Width + Enemy.SizeIncreaseAmount",
 								"height": "Player.Height + Enemy.SizeIncreaseAmount"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Player",
+							"sid": 321395945668773,
+							"parameters": {
+								"width": "PlayerOutline.Width + Enemy.SizeIncreaseAmount",
+								"height": "PlayerOutline.Height + Enemy.SizeIncreaseAmount"
 							}
 						}
 					],
@@ -374,8 +429,8 @@
 						},
 						{
 							"id": "set-default-color",
-							"objectClass": "Player",
-							"sid": 916588418475788,
+							"objectClass": "PlayerOutline",
+							"sid": 248819686208201,
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
@@ -398,35 +453,19 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "set-position-to-another-object",
+							"id": "destroy",
 							"objectClass": "Enemy",
-							"sid": 674407778327386,
-							"parameters": {
-								"object": "Player",
-								"image-point-optional": "0"
-							}
+							"sid": 169552458512766
 						},
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Enemy",
-							"sid": 596336769093593,
-							"behaviorType": "Pin",
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 424277367418788,
+							"behaviorType": "ScrollTo",
 							"parameters": {
-								"pin-to": "Player",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy",
-							"sid": 737895987196334,
-							"parameters": {
-								"state": "mirrored"
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
 							}
 						}
 					],
@@ -472,7 +511,8 @@
 					}
 				}
 			],
-			"sid": 837428275041343
+			"sid": 837428275041343,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -507,7 +547,8 @@
 					}
 				}
 			],
-			"sid": 469497625545435
+			"sid": 469497625545435,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -553,6 +594,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 164449466384047
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 932223173232839,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 113739283763715,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -586,6 +644,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 888089996565991
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 333615328602641,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 501612155775971,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 906677902923989
@@ -619,6 +694,23 @@
 							"id": "destroy",
 							"objectClass": "ColoredPlatform",
 							"sid": 564953287653916
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 493980042561577,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "PlayerOutline",
+							"sid": 567083115325000,
+							"parameters": {
+								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
 						}
 					],
 					"sid": 769729652657458
@@ -645,6 +737,276 @@
 				}
 			],
 			"sid": 486522346500329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PlayerOutline",
+					"sid": 905528794881166
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerOutline",
+					"sid": 925120520725269,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerOutline",
+					"sid": 871900158266758,
+					"parameters": {
+						"width": "Player.Width",
+						"height": "Player.Height"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "PlayerOutline",
+					"sid": 264861314194917,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 201070462592001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 424682727967660,
+					"parameters": {
+						"object": "Hazard"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 617328712260749,
+					"parameters": {
+						"instance-variable": "Lives",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 990963609645845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-height",
+					"objectClass": "Player",
+					"sid": 403590357359746,
+					"parameters": {
+						"comparison": 3,
+						"height": "0"
+					}
+				},
+				{
+					"id": "compare-width",
+					"objectClass": "Player",
+					"sid": 754930522377998,
+					"parameters": {
+						"comparison": 3,
+						"width": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 679730902207164,
+					"parameters": {
+						"instance-variable": "ShouldLose",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 312342256814568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 621992097396256,
+					"parameters": {
+						"instance-variable": "Lives",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 598738561087325,
+					"parameters": {
+						"instance-variable": "ShouldLose",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 705795602487688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 479258015751502,
+					"parameters": {
+						"first-value": "HeighestPoint",
+						"comparison": 1,
+						"second-value": "LayoutHeight-Player.Y"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 210512845544219,
+					"disabled": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 191569871763880,
+					"parameters": {
+						"variable": "HeighestPoint",
+						"value": "LayoutHeight-Player.Y"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 324187535628120,
+					"parameters": {
+						"text": "HeighestPoint"
+					}
+				}
+			],
+			"sid": 784246074701261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 853687005636291,
+					"parameters": {
+						"instance-variable": "ShouldLose"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 309299258594498
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 217256861027446
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 942909094234660,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 317895066677924
+				}
+			],
+			"sid": 632170584851732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "LivesText",
+					"sid": 136297027316940,
+					"parameters": {
+						"instance-variable": "LivesValue",
+						"comparison": 1,
+						"value": "Player.Lives"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LivesText",
+					"sid": 519969094436121,
+					"parameters": {
+						"instance-variable": "LivesValue",
+						"value": "Player.Lives"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "LivesText",
+					"sid": 645965959465231,
+					"parameters": {
+						"text": "LivesText.LivesValue"
+					}
+				}
+			],
+			"sid": 405464244025920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 179747348519407,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 845987737339319
+				}
+			],
+			"sid": 438607126965656
 		}
 	],
 	"sid": 805646571702529

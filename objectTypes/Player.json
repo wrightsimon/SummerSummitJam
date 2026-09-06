@@ -25,6 +25,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 822526615725006
+		},
+		{
+			"name": "ShouldLose",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 746050462464487
+		},
+		{
+			"name": "Lives",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 660965769212510
 		}
 	],
 	"behaviorTypes": [
@@ -75,10 +89,8 @@
 								0.75390625,
 								0.6796875,
 								0.78125,
-								0.5800780653953552,
-								0.6875,
-								0.3818359375,
-								0.7441406100988388,
+								0.296875,
+								0.734375,
 								0.1484375,
 								0.67578125,
 								0.10546875,
@@ -95,7 +107,7 @@
 					}
 				],
 				"sid": 572207258407254,
-				"name": "player",
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
