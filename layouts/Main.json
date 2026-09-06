@@ -1578,7 +1578,7 @@
 	"effectTypes": [],
 	"width": 1024,
 	"height": 5120,
-	"unboundedScrolling": true,
+	"unboundedScrolling": false,
 	"sampling": "auto",
 	"vpX": 0.5,
 	"vpY": 0.5,
