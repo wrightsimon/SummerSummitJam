@@ -4,7 +4,15 @@
 	"sid": 789979746832890,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "MaxDistanceFromBottom",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 256066968687134
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",

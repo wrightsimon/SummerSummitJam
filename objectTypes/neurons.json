@@ -1,7 +1,7 @@
 {
 	"name": "neurons",
 	"plugin-id": "Sprite",
-	"sid": 204959191372364,
+	"sid": 974837271831797,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
-						"originX": 0.53125,
-						"originY": 0.5172413793103449,
+						"width": 64,
+						"height": 64,
+						"originX": 0.43548387096774194,
+						"originY": 0.5357142857142857,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5935611,
+						"imageSpriteId": 8683302,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 638843929047631,
+				"sid": 595376167037081,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
