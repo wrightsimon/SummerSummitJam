@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -96,6 +103,13 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "zw8ud2k33c3",
@@ -113,7 +127,11 @@
 			"TiledBackground",
 			"Hazard",
 			"ScoreText",
-			"LivesText"
+			"LivesText",
+			"3DShape",
+			"ColoredPlatform2",
+			"neurons",
+			"TiledBackground2"
 		],
 		"subfolders": []
 	},
