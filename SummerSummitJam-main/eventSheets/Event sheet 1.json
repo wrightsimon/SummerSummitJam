@@ -1185,9 +1185,13 @@
 					}
 				},
 				{
-					"id": "destroy",
+					"id": "set-ignoring-input",
 					"objectClass": "Player",
-					"sid": 306803422593357
+					"sid": 282959993302066,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"input": "start-ignoring"
+					}
 				},
 				{
 					"id": "wait",
