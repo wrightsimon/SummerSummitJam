@@ -1358,6 +1358,32 @@
 					"parameters": {
 						"layout": "Final Screen"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 283259103016232,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EndText",
+					"sid": 994667642776964,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "mindful_logo",
+					"sid": 617974040363430,
+					"parameters": {
+						"animation": "\"mindfull\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 917249008515821
