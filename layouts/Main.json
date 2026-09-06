@@ -7,52 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "3DShape",
-					"properties": {
-						"shape": "box",
-						"z-origin": "back",
-						"initially-visible": true,
-						"face-back": false,
-						"face-front": true,
-						"face-left": true,
-						"face-right": true,
-						"face-top": true,
-						"face-bottom": true,
-						"back-face-culling": false,
-						"z-tiling-factor": 1,
-						"object-back": -1,
-						"object-front": -1,
-						"object-left": -1,
-						"object-right": -1,
-						"object-top": -1,
-						"object-bottom": -1
-					},
-					"uid": 10,
-					"sid": 282199941338861,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 228,
-						"y": 3851,
-						"width": 120,
-						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": -5,
-						"depth": 120,
-						"angle": 0
-					}
-				},
-				{
 					"type": "TiledBackground",
 					"properties": {
 						"initially-visible": true,
@@ -596,7 +550,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 128,
+						"x": 192,
 						"y": 4352,
 						"width": 128,
 						"height": 128,
@@ -625,7 +579,7 @@
 					"sid": 593302128889229,
 					"tags": "",
 					"instanceVariables": {
-						"MaxDistanceFromBottom": 150
+						"MaxDistanceFromBottom": 125
 					},
 					"behaviors": {
 						"Bullet": {
@@ -750,8 +704,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 846,
-						"y": 3851,
+						"x": 642,
+						"y": 3840,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -1593,17 +1547,20 @@
 					"uid": 33,
 					"sid": 591842328743181,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": true,
+						"RotateTimer": 1
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 512,
-						"y": 4277,
+						"y": 4352,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -1838,17 +1795,20 @@
 					"uid": 62,
 					"sid": 802270938064547,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 128,
-						"y": 4266,
+						"y": 4350,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -1994,8 +1954,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 228,
-						"y": 3851,
+						"x": 386,
+						"y": 3840,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -2116,7 +2076,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 896,
+						"x": 832,
 						"y": 4352,
 						"width": 128,
 						"height": 128,
@@ -2144,13 +2104,62 @@
 					"uid": 80,
 					"sid": 202390027157579,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 896,
-						"y": 4271,
+						"y": 4355,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Obstacle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"sid": 874453135389306,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 262,
+						"y": 3840,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -2166,7 +2175,7 @@
 					}
 				},
 				{
-					"type": "neurons",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2174,32 +2183,45 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 65,
-					"sid": 956742291853689,
+					"uid": 81,
+					"sid": 299008798942378,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 846,
-						"y": 4352,
-						"width": -64,
-						"height": 64,
-						"originX": 0.43548387096774194,
-						"originY": 0.5357142857142857,
+						"x": 770,
+						"y": 3840,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"z": 1,
+						"z": 0,
 						"angle": 0
 					}
 				},
 				{
-					"type": "neurons",
+					"type": "Obstacle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2207,27 +2229,86 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 64,
-					"sid": 804480165024726,
+					"uid": 9,
+					"sid": 497599139830227,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 555,
-						"y": 4351,
-						"width": 64,
-						"height": 64,
-						"originX": 0.43548387096774194,
-						"originY": 0.5357142857142857,
+						"x": 64,
+						"y": 4354,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"z": 1,
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Obstacle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"sid": 347131305379975,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 960,
+						"y": 4354,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
 						"angle": 0
 					}
 				},
@@ -2580,56 +2661,6 @@
 					}
 				},
 				{
-					"type": "ColoredPlatform",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"sid": 265398347572230,
-					"tags": "",
-					"instanceVariables": {
-						"ColorBlueValue": 0,
-						"ColorGreenValue": 255,
-						"ColorRedValue": 0
-					},
-					"behaviors": {
-						"DestroyOutside": {
-							"properties": {
-								"region": "layout"
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 704,
-						"y": 4352,
-						"width": 256,
-						"height": 42,
-						"originX": 0.5,
-						"originY": 0.6190476190476192,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 2,
-						"angle": 0
-					}
-				},
-				{
 					"type": "Hazard",
 					"properties": {
 						"initially-visible": true,
@@ -2641,17 +2672,20 @@
 					"uid": 51,
 					"sid": 853973300159249,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 848,
-						"y": 3771,
+						"x": 639,
+						"y": 4008,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2659,7 +2693,7 @@
 							1
 						],
 						"z": 3,
-						"angle": 0
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -2674,17 +2708,20 @@
 					"uid": 52,
 					"sid": 534604926368318,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 228,
-						"y": 3768,
+						"x": 387,
+						"y": 4013,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2692,7 +2729,7 @@
 							1
 						],
 						"z": 3,
-						"angle": 0
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -2707,17 +2744,20 @@
 					"uid": 53,
 					"sid": 331729821908787,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 264,
-						"y": 3220,
+						"y": 3304,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2740,17 +2780,20 @@
 					"uid": 54,
 					"sid": 739929364275172,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 784,
-						"y": 3235,
+						"y": 3319,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2773,17 +2816,20 @@
 					"uid": 55,
 					"sid": 314820932339473,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 542,
-						"y": 2729,
+						"y": 2813,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2806,17 +2852,20 @@
 					"uid": 56,
 					"sid": 242609011847786,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 876,
-						"y": 2732,
+						"y": 2816,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2839,17 +2888,20 @@
 					"uid": 57,
 					"sid": 410942570253213,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 640,
-						"y": 2213,
+						"y": 2297,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2872,17 +2924,20 @@
 					"uid": 58,
 					"sid": 799750518475150,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 390,
-						"y": 2211,
+						"y": 2295,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2905,17 +2960,20 @@
 					"uid": 59,
 					"sid": 598826031734004,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 128,
-						"y": 1686,
+						"y": 1770,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2938,17 +2996,20 @@
 					"uid": 60,
 					"sid": 533893553257809,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 783,
-						"y": 153,
+						"y": 237,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2971,17 +3032,20 @@
 					"uid": 61,
 					"sid": 186422153910387,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 263,
-						"y": 139,
+						"y": 223,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -3004,17 +3068,20 @@
 					"uid": 72,
 					"sid": 133941080233029,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 906,
-						"y": 1695,
+						"y": 1779,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -3022,122 +3089,6 @@
 							1
 						],
 						"z": 3,
-						"angle": 0
-					}
-				},
-				{
-					"type": "neurons",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 40,
-					"sid": 336129406947797,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 174,
-						"y": 4352,
-						"width": 64,
-						"height": 64,
-						"originX": 0.43548387096774194,
-						"originY": 0.5357142857142857,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 5,
-						"angle": 0
-					}
-				},
-				{
-					"type": "neurons",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 42,
-					"sid": 156120234232204,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 479,
-						"y": 4349,
-						"width": -64,
-						"height": 64,
-						"originX": 0.43548387096774194,
-						"originY": 0.5357142857142857,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 5,
-						"angle": 0
-					}
-				},
-				{
-					"type": "ColoredPlatform2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 39,
-					"sid": 176016001590721,
-					"tags": "",
-					"instanceVariables": {
-						"ColorBlueValue": 0,
-						"ColorGreenValue": 0,
-						"ColorRedValue": 0
-					},
-					"behaviors": {
-						"DestroyOutside": {
-							"properties": {
-								"region": "layout"
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": false,
-								"tags": ""
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 320,
-						"y": 4352,
-						"width": 256,
-						"height": 42,
-						"originX": 0.5,
-						"originY": 0.6190476190476192,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 6,
 						"angle": 0
 					}
 				},
@@ -3153,17 +3104,20 @@
 					"uid": 50,
 					"sid": 438174808846233,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 790.979248046875,
-						"y": 3468.226318359375,
+						"x": 791,
+						"y": 3548,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -3186,17 +3140,20 @@
 					"uid": 41,
 					"sid": 130555195353079,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CanRotate": false,
+						"RotateTimer": 0
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 377,
-						"y": 3474.685791015625,
+						"y": 3554,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
