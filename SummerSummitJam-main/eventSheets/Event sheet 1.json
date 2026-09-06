@@ -163,6 +163,19 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 684705432605747,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "choose(\"v1_s1\", \"v1_s2\", \"v1_s3\", \"v1_s4\", \"v1_s5\", \"v1_s6\", \"v1_s7\", \"v2_s1\", \"v2_s2\", \"v2_s3\", \"v2_s4\", \"v2_s5\", \"v2_s6\", \"v2_s7\")",
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-angle",
 					"objectClass": "Enemy",
 					"sid": 871537748938193,
@@ -224,7 +237,21 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 352796073461553,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "choose(\"v1_ds1\", \"v1_ds2\", \"v1_ds3\", \"v1_ds4\", \"v1_ds5\", \"v1_ds6\", \"v1_ds7\", \"v2_ds1\", \"v2_ds2\", \"v2_ds3\", \"v2_ds4\", \"v2_ds5\", \"v2_ds6\", \"v2_ds7\")",
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
 			"sid": 868345339009511,
 			"children": [
 				{
@@ -611,6 +638,20 @@
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 808836943471545,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -660,6 +701,20 @@
 							"sid": 501612155775971,
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 680717198853974,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -711,9 +766,76 @@
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 399396295287758,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 769729652657458
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 902919469339677,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorRedValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 647120482659751,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorBlueValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 703747143208912,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorBlueValue"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 777447124178243,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_fail"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 218030787417734,
+					"isOrBlock": true
 				}
 			]
 		},
@@ -804,6 +926,20 @@
 					"parameters": {
 						"instance-variable": "Lives",
 						"value": "-1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 848812122293394,
+					"parameters": {
+						"audio-file": {
+							"path": "hurt"
+						},
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -931,9 +1067,31 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 397897858005723,
+					"parameters": {
+						"audio-file": {
+							"path": "game_over"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 183521393743843,
+					"parameters": {
+						"tag": "\"bgm\""
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Player",
-					"sid": 217256861027446
+					"sid": 306803422593357
 				},
 				{
 					"id": "wait",
@@ -1007,6 +1165,33 @@
 				}
 			],
 			"sid": 438607126965656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 773680826991708
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 282074336808500,
+					"parameters": {
+						"audio-file": {
+							"path": "bgm"
+						},
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"bgm\""
+					}
+				}
+			],
+			"sid": 429621216370167
 		}
 	],
 	"sid": 805646571702529

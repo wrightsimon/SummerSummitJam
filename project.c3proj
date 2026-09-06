@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -128,10 +135,7 @@
 			"Hazard",
 			"ScoreText",
 			"LivesText",
-			"Tilemap",
-			"3DShape",
-			"TiledBackground2",
-			"neurons"
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -160,11 +164,277 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "v1_s1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 721605697756739,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607455484660470,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 846476269598883,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 770581891060165,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 386529564691457,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 840188329106705,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_s7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 678099396908837,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 762580492654539,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 361011349461780,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 493679553477990,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 888211494506529,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 932346856291282,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 831069742257708,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_s1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 126043603514400,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 645948672601340,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 808567136406127,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 649454642911059,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 360745446941323,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 823776428236254,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 506278254727929,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v1_ds1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 413277485036209,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 224018873670050,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 225483801956127,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 166746143955476,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 522117452559008,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 980170480888354,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 564785991046216,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "v2_ds2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 888758954030726,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hurt.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 753812888026355,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game_over.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 121258476261577,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gate_fail.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 388178242919683,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gate_success.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 663011509254190,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "bgm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 769955425539075,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
