@@ -131,7 +131,8 @@
 			"3DShape",
 			"ColoredPlatform2",
 			"neurons",
-			"TiledBackground2"
+			"TiledBackground2",
+			"EndText"
 		],
 		"subfolders": []
 	},
@@ -144,13 +145,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Main"
+			"Main",
+			"Final Screen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
