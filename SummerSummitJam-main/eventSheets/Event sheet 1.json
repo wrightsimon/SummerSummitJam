@@ -1185,9 +1185,13 @@
 					}
 				},
 				{
-					"id": "destroy",
+					"id": "set-ignoring-input",
 					"objectClass": "Player",
-					"sid": 306803422593357
+					"sid": 282959993302066,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"input": "start-ignoring"
+					}
 				},
 				{
 					"id": "wait",
@@ -1357,6 +1361,32 @@
 					"sid": 117974998231115,
 					"parameters": {
 						"layout": "Final Screen"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 283259103016232,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EndText",
+					"sid": 994667642776964,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "mindful_logo",
+					"sid": 617974040363430,
+					"parameters": {
+						"animation": "\"mindfull\"",
+						"from": "beginning"
 					}
 				}
 			],
