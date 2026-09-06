@@ -1,33 +1,33 @@
 {
 	"name": "TiledBackground2",
 	"plugin-id": "TiledBg",
-	"sid": 176562527971010,
+	"sid": 102748956709059,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 390608175900917
-		},
-		{
 			"behaviorId": "wrap",
 			"name": "Wrap",
-			"sid": 477803028062527
+			"sid": 483252256388741
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 599347776812088
 		}
 	],
 	"effectTypes": [],
 	"image": {
 		"width": 1024,
-		"height": 1301,
+		"height": 945,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 6067228,
+		"imageSpriteId": 906641,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
