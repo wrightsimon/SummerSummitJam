@@ -550,8 +550,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 536,
-						"y": 4361,
+						"x": 512,
+						"y": 4352,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -596,8 +596,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 133,
-						"y": 4351,
+						"x": 128,
+						"y": 4352,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -1598,7 +1598,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 537,
+						"x": 512,
 						"y": 4277,
 						"width": 128,
 						"height": 128,
@@ -1843,7 +1843,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 134,
+						"x": 128,
 						"y": 4266,
 						"width": 128,
 						"height": 128,
@@ -2087,6 +2087,85 @@
 					}
 				},
 				{
+					"type": "Obstacle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"sid": 374901329943394,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						},
+						"DestroyOutside": {
+							"properties": {
+								"region": "layout"
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 896,
+						"y": 4352,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Hazard",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 80,
+					"sid": 202390027157579,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 896,
+						"y": 4271,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
 					"type": "neurons",
 					"properties": {
 						"initially-visible": true,
@@ -2103,8 +2182,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 980,
-						"y": 4372,
+						"x": 846,
+						"y": 4352,
 						"width": -64,
 						"height": 64,
 						"originX": 0.43548387096774194,
@@ -2136,8 +2215,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 647,
-						"y": 4369,
+						"x": 555,
+						"y": 4351,
 						"width": 64,
 						"height": 64,
 						"originX": 0.43548387096774194,
@@ -2534,9 +2613,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 812.3981027558137,
-						"y": 4377,
-						"width": 304.3588178056888,
+						"x": 704,
+						"y": 4352,
+						"width": 256,
 						"height": 42,
 						"originX": 0.5,
 						"originY": 0.6190476190476192,
@@ -2963,8 +3042,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 194,
-						"y": 4370,
+						"x": 174,
+						"y": 4352,
 						"width": 64,
 						"height": 64,
 						"originX": 0.43548387096774194,
@@ -2996,8 +3075,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 469,
-						"y": 4369,
+						"x": 479,
+						"y": 4349,
 						"width": -64,
 						"height": 64,
 						"originX": 0.43548387096774194,
@@ -3046,9 +3125,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 332,
-						"y": 4374,
-						"width": 239.79373815459394,
+						"x": 320,
+						"y": 4352,
+						"width": 256,
 						"height": 42,
 						"originX": 0.5,
 						"originY": 0.6190476190476192,
