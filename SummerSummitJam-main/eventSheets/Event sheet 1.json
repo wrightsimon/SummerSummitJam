@@ -97,7 +97,8 @@
 				{
 					"id": "on-created",
 					"objectClass": "Player",
-					"sid": 114753470489013
+					"sid": 114753470489013,
+					"disabled": true
 				}
 			],
 			"actions": [
@@ -111,7 +112,8 @@
 					}
 				}
 			],
-			"sid": 398169934857530
+			"sid": 398169934857530,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -579,8 +581,7 @@
 					}
 				}
 			],
-			"sid": 837428275041343,
-			"disabled": true
+			"sid": 837428275041343
 		},
 		{
 			"eventType": "block",
@@ -598,10 +599,10 @@
 				{
 					"id": "compare-y",
 					"objectClass": "Player",
-					"sid": 658246848853656,
+					"sid": 983163629719826,
 					"parameters": {
 						"comparison": 2,
-						"y-co-ordinate": "Scroller.Y"
+						"y-co-ordinate": "ViewportTop(\"Layer 0\")"
 					}
 				}
 			],
@@ -609,14 +610,13 @@
 				{
 					"id": "set-y",
 					"objectClass": "Player",
-					"sid": 193122893573267,
+					"sid": 532104382929637,
 					"parameters": {
-						"y": "Scroller.Y"
+						"y": "ViewportTop(\"Layout 0\")"
 					}
 				}
 			],
-			"sid": 469497625545435,
-			"disabled": true
+			"sid": 469497625545435
 		},
 		{
 			"eventType": "block",
@@ -1136,9 +1136,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "ScoreText",
-					"sid": 324187535628120,
+					"sid": 799593119392846,
 					"parameters": {
-						"text": "HeighestPoint"
+						"text": "floor(HeighestPoint)"
 					}
 				}
 			],
