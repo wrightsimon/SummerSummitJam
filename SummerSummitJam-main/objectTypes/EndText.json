@@ -1,0 +1,10 @@
+{
+	"name": "EndText",
+	"plugin-id": "Text",
+	"sid": 251956463960173,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
