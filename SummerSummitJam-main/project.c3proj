@@ -451,7 +451,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Lacquer-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 771779967212348,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
