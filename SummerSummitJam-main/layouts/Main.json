@@ -1593,7 +1593,10 @@
 					"uid": 33,
 					"sid": 591842328743181,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -1603,7 +1606,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -1838,7 +1841,10 @@
 					"uid": 62,
 					"sid": 802270938064547,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -1848,7 +1854,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2519,7 +2525,10 @@
 					"uid": 51,
 					"sid": 853973300159249,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2529,7 +2538,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2552,7 +2561,10 @@
 					"uid": 52,
 					"sid": 534604926368318,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2562,7 +2574,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2585,7 +2597,10 @@
 					"uid": 53,
 					"sid": 331729821908787,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2595,7 +2610,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2618,7 +2633,10 @@
 					"uid": 54,
 					"sid": 739929364275172,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2628,7 +2646,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2651,7 +2669,10 @@
 					"uid": 55,
 					"sid": 314820932339473,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2661,7 +2682,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2684,7 +2705,10 @@
 					"uid": 56,
 					"sid": 242609011847786,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2694,7 +2718,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2717,7 +2741,10 @@
 					"uid": 57,
 					"sid": 410942570253213,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2727,7 +2754,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2750,7 +2777,10 @@
 					"uid": 58,
 					"sid": 799750518475150,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2760,7 +2790,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2783,7 +2813,10 @@
 					"uid": 59,
 					"sid": 598826031734004,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2793,7 +2826,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2816,7 +2849,10 @@
 					"uid": 60,
 					"sid": 533893553257809,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2826,7 +2862,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2849,7 +2885,10 @@
 					"uid": 61,
 					"sid": 186422153910387,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2859,7 +2898,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2882,7 +2921,10 @@
 					"uid": 72,
 					"sid": 133941080233029,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -2892,7 +2934,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -3481,7 +3523,10 @@
 					"uid": 50,
 					"sid": 438174808846233,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -3491,7 +3536,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -3514,7 +3559,10 @@
 					"uid": 41,
 					"sid": 130555195353079,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ShouldRotate": false,
+						"RotateTimer": 3
+					},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
@@ -3524,7 +3572,7 @@
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,

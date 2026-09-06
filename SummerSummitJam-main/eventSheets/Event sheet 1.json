@@ -1297,6 +1297,46 @@
 				}
 			],
 			"sid": 429621216370167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 312985908644502,
+					"parameters": {
+						"object": "Hazard"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 815753323358227,
+					"parameters": {
+						"interval-seconds": "Hazard.RotateTimer"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Hazard",
+					"sid": 461183626425830,
+					"parameters": {
+						"instance-variable": "ShouldRotate"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "Hazard",
+					"sid": 236356002930099,
+					"parameters": {
+						"degrees": "90"
+					}
+				}
+			],
+			"sid": 302550562941951
 		}
 	],
 	"sid": 805646571702529
