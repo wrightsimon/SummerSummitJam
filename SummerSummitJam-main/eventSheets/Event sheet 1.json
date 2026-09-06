@@ -95,15 +95,56 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
+					"id": "on-created",
 					"objectClass": "Player",
-					"sid": 273855778803810,
+					"sid": 114753470489013
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 757064403096235,
 					"parameters": {
-						"object": "Obstacle"
+						"x": "Scroller.X",
+						"y": "Scroller.Y"
 					}
 				}
 			],
-			"actions": [],
+			"sid": 398169934857530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 381440775863857,
+					"parameters": {
+						"object": "Obstacle"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Player",
+					"sid": 490680802757505,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "Scroller.Y+(ViewportHeight(\"Layer 0\")/2)-Scroller.MaxDistanceFromBottom"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 226360203939663,
+					"parameters": {
+						"instance-variable": "ShouldLose",
+						"value": "true"
+					}
+				}
+			],
 			"sid": 463932673288775
 		},
 		{
