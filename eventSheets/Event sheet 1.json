@@ -627,6 +627,20 @@
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 197769244216882,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -676,6 +690,20 @@
 							"sid": 501612155775971,
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 279571897740313,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -727,9 +755,76 @@
 							"parameters": {
 								"color": "rgbEx(Player.ColorRedValue, Player.ColorGreenValue, Player.ColorBlueValue)"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 816055846140756,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_success"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 769729652657458
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 773595206290409,
+							"parameters": {
+								"instance-variable": "ColorBlueValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorBlueValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 586801634844598,
+							"parameters": {
+								"instance-variable": "ColorGreenValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorGreenValue"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 822728493093595,
+							"parameters": {
+								"instance-variable": "ColorRedValue",
+								"comparison": 1,
+								"value": "ColoredPlatform.ColorRedValue"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 358968156693693,
+							"parameters": {
+								"audio-file": {
+									"path": "gate_fail"
+								},
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 386368459542215,
+					"isOrBlock": true
 				}
 			]
 		},
@@ -1051,6 +1146,33 @@
 				}
 			],
 			"sid": 438607126965656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 984850711170223
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 872650695286853,
+					"parameters": {
+						"audio-file": {
+							"path": "bgm"
+						},
+						"loop": "not-looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 470325015795094
 		}
 	],
 	"sid": 805646571702529

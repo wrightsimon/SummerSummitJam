@@ -404,12 +404,37 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "gate_fail.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 388178242919683,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gate_success.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 663011509254190,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "bgm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 769955425539075,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
