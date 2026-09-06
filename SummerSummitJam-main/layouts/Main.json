@@ -1827,6 +1827,72 @@
 					}
 				},
 				{
+					"type": "mindful_logo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "mindful",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 73,
+					"sid": 997514838461175,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 511.5,
+						"y": 4615,
+						"width": 783,
+						"height": 259,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "pressanykey",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "pressanykey",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 74,
+					"sid": 169345548033246,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 512,
+						"y": 4844,
+						"width": 256,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
 					"type": "neurons",
 					"properties": {
 						"initially-visible": true,
@@ -2176,7 +2242,7 @@
 					"world": {
 						"x": 674.9082265820724,
 						"y": 1785,
-						"width": 239.7710781154632,
+						"width": 239.77107811546324,
 						"height": 42,
 						"originX": 0.5,
 						"originY": 0.6190476190476192,
@@ -2662,7 +2728,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 63,
+					"uid": 72,
 					"sid": 133941080233029,
 					"tags": "",
 					"instanceVariables": {},

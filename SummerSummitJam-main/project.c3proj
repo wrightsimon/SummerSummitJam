@@ -132,7 +132,9 @@
 			"ColoredPlatform2",
 			"neurons",
 			"TiledBackground2",
-			"EndText"
+			"EndText",
+			"mindful_logo",
+			"pressanykey"
 		],
 		"subfolders": []
 	},
