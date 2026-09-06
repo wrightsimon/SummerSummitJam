@@ -485,7 +485,7 @@
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge",
-								"region": "viewport"
+								"region": "layout"
 							}
 						},
 						"8Direction": {
@@ -649,7 +649,7 @@
 					"locked": false,
 					"world": {
 						"x": 512,
-						"y": 4640,
+						"y": 4437,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
@@ -1981,8 +1981,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 485,
-						"y": 4100,
+						"x": 1400,
+						"y": 4190,
 						"width": 512,
 						"height": 128,
 						"originX": 0.5,
@@ -2006,7 +2006,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 76,
+					"uid": 85,
 					"sid": 533086407048119,
 					"tags": "",
 					"instanceVariables": {},
