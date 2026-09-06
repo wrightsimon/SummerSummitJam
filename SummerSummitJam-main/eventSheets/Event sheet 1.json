@@ -97,21 +97,23 @@
 				{
 					"id": "on-created",
 					"objectClass": "Player",
-					"sid": 114753470489013
+					"sid": 114753470489013,
+					"disabled": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-position",
+					"id": "set-position-to-another-object",
 					"objectClass": "Player",
-					"sid": 757064403096235,
+					"sid": 281738951814501,
 					"parameters": {
-						"x": "Scroller.X",
-						"y": "Scroller.Y"
+						"object": "PlayerOutline",
+						"image-point-optional": "0"
 					}
 				}
 			],
-			"sid": 398169934857530
+			"sid": 398169934857530,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -579,8 +581,7 @@
 					}
 				}
 			],
-			"sid": 837428275041343,
-			"disabled": true
+			"sid": 837428275041343
 		},
 		{
 			"eventType": "block",
@@ -598,10 +599,10 @@
 				{
 					"id": "compare-y",
 					"objectClass": "Player",
-					"sid": 658246848853656,
+					"sid": 983163629719826,
 					"parameters": {
 						"comparison": 2,
-						"y-co-ordinate": "Scroller.Y"
+						"y-co-ordinate": "ViewportTop(\"Layer 0\")"
 					}
 				}
 			],
@@ -609,14 +610,13 @@
 				{
 					"id": "set-y",
 					"objectClass": "Player",
-					"sid": 193122893573267,
+					"sid": 532104382929637,
 					"parameters": {
-						"y": "Scroller.Y"
+						"y": "ViewportTop(\"Layout 0\")"
 					}
 				}
 			],
-			"sid": 469497625545435,
-			"disabled": true
+			"sid": 469497625545435
 		},
 		{
 			"eventType": "block",
@@ -693,6 +693,17 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 330579957091283,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -756,6 +767,17 @@
 								"volume": "-10",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 893365474825203,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
 							}
 						}
 					],
@@ -821,6 +843,17 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 886239130403008,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
 						}
 					],
 					"sid": 769729652657458
@@ -872,6 +905,17 @@
 								"volume": "0",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 236475728074066,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
 							}
 						}
 					],
@@ -967,6 +1011,17 @@
 					"parameters": {
 						"instance-variable": "Lives",
 						"value": "-1"
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "Scroller",
+					"sid": 687000614884751,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "20",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
 					}
 				},
 				{
@@ -1081,9 +1136,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "ScoreText",
-					"sid": 324187535628120,
+					"sid": 608753037990266,
 					"parameters": {
-						"text": "HeighestPoint"
+						"text": "\"Score: \" &floor(HeighestPoint)"
 					}
 				}
 			],
@@ -1147,6 +1202,15 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 317895066677924
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Scroller",
+					"sid": 342484376560955,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
 				}
 			],
 			"sid": 632170584851732
@@ -1178,9 +1242,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "LivesText",
-					"sid": 645965959465231,
+					"sid": 135469100038351,
 					"parameters": {
-						"text": "LivesText.LivesValue"
+						"text": "\"Lives: \" & LivesText.LivesValue"
 					}
 				}
 			],
@@ -1233,6 +1297,70 @@
 				}
 			],
 			"sid": 429621216370167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 312985908644502,
+					"parameters": {
+						"object": "Hazard"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 815753323358227,
+					"parameters": {
+						"interval-seconds": "Hazard.RotateTimer"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Hazard",
+					"sid": 461183626425830,
+					"parameters": {
+						"instance-variable": "ShouldRotate"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "Hazard",
+					"sid": 236356002930099,
+					"parameters": {
+						"degrees": "90"
+					}
+				}
+			],
+			"sid": 302550562941951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 283140478154465,
+					"parameters": {
+						"object": "theend"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 117974998231115,
+					"parameters": {
+						"layout": "Final Screen"
+					}
+				}
+			],
+			"sid": 917249008515821
 		}
 	],
 	"sid": 805646571702529

@@ -147,9 +147,11 @@
 			"neurons",
 			"TiledBackground2",
 			"EndText",
-			"Audio",
 			"mindful_logo",
-			"pressanykey"
+			"pressanykey",
+			"theend",
+			"clouds",
+			"Audio"
 		],
 		"subfolders": []
 	},
