@@ -1,0 +1,85 @@
+{
+	"name": "ColoredPlatform",
+	"plugin-id": "Sprite",
+	"sid": 965126418569729,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ColorBlueValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 106381671443572
+		},
+		{
+			"name": "ColorGreenValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 788139628175426
+		},
+		{
+			"name": "ColorRedValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 485382776314261
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutside",
+			"sid": 423653412028953
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 997846734886558
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7514926,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.3780000000000001,
+								1,
+								0.37600000000000017,
+								1,
+								0.5839999999999996,
+								0,
+								0.6159999999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 512245486051112,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
