@@ -625,7 +625,7 @@
 					"sid": 593302128889229,
 					"tags": "",
 					"instanceVariables": {
-						"MaxDistanceFromBottom": 150
+						"MaxDistanceFromBottom": 152
 					},
 					"behaviors": {
 						"Bullet": {
@@ -634,7 +634,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}

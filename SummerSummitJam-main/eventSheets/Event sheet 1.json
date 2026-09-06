@@ -102,12 +102,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-position",
+					"id": "set-position-to-another-object",
 					"objectClass": "Player",
-					"sid": 757064403096235,
+					"sid": 281738951814501,
 					"parameters": {
-						"x": "Scroller.X",
-						"y": "Scroller.Y"
+						"object": "PlayerOutline",
+						"image-point-optional": "0"
 					}
 				}
 			],
@@ -693,6 +693,17 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 330579957091283,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
 						}
 					],
 					"sid": 716802177019793
@@ -756,6 +767,17 @@
 								"volume": "-10",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 893365474825203,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
 							}
 						}
 					],
@@ -821,6 +843,17 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 886239130403008,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
 						}
 					],
 					"sid": 769729652657458
@@ -872,6 +905,17 @@
 								"volume": "0",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Scroller",
+							"sid": 236475728074066,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
 							}
 						}
 					],
@@ -967,6 +1011,17 @@
 					"parameters": {
 						"instance-variable": "Lives",
 						"value": "-1"
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "Scroller",
+					"sid": 687000614884751,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "20",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
 					}
 				},
 				{
@@ -1147,6 +1202,15 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 317895066677924
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Scroller",
+					"sid": 342484376560955,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
 				}
 			],
 			"sid": 632170584851732
