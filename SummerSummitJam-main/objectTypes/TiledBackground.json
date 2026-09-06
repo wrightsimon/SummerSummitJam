@@ -1,24 +1,23 @@
 {
-	"name": "Tilemap",
-	"plugin-id": "Tilemap",
-	"sid": 963342887237061,
+	"name": "TiledBackground",
+	"plugin-id": "TiledBg",
+	"sid": 559853388056227,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 128,
-		"height": 128,
+		"width": 1024,
+		"height": 1024,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 3889613,
+		"imageSpriteId": 8724751,
 		"useCollisionPoly": true,
 		"tag": ""
-	},
-	"tile-collision-polys": {}
+	}
 }

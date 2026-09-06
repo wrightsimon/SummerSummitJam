@@ -1,17 +1,11 @@
 {
-	"name": "Platform2",
+	"name": "Hazard",
 	"plugin-id": "Sprite",
-	"sid": 757759001982458,
+	"sid": 797124957803519,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 707665094641406
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7224375,
+						"imageSpriteId": 3540502,
 						"collisionPoly": {
 							"points": [
 								0.21875,
@@ -66,7 +60,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7150237,
+						"imageSpriteId": 5091166,
 						"collisionPoly": {
 							"points": [
 								0.15625,
@@ -104,7 +98,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9719975,
+						"imageSpriteId": 7473432,
 						"collisionPoly": {
 							"points": [
 								0.15625,
@@ -136,8 +130,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 137719943590954,
-				"name": "block_1",
+				"sid": 229376336611189,
+				"name": "Animation 1",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

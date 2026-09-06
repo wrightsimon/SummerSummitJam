@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -101,6 +108,13 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -531,7 +545,7 @@
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -552,7 +566,7 @@
 			1,
 			0
 		],
-		"orientations": "landscape",
+		"orientations": "any",
 		"webgpu": "auto",
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
@@ -574,6 +588,6 @@
 		"scriptsType": "module"
 	},
 	"viewportWidth": 1024,
-	"viewportHeight": 1366,
+	"viewportHeight": 612,
 	"firstLayout": "Main"
 }
