@@ -163,6 +163,19 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 277074742966421,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "choose(\"v1_s1\", \"v1_s2\", \"v1_s3\", \"v1_s4\", \"v1_s5\",\r\n\"v1_s6\", \"v2_s1\", \"v2_s2\", \"v2_s3\", \"v2_s4\", \"v2_s5\",\r\n\"v2_s6\", \"v2_s7\")",
+						"loop": "not-looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-angle",
 					"objectClass": "Enemy",
 					"sid": 871537748938193,
@@ -224,7 +237,21 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 378399603463624,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "choose(\"v1_ds1\", \"v1_ds2\", \"v1_ds3\", \"v1_ds4\", \"v1_ds5\",\r\n\"v1_ds6\", \"v2_ds1\", \"v2_ds2\", \"v2_ds3\", \"v2_ds4\", \"v2_ds5\",\r\n\"v2_ds6\", \"v2_ds7\")",
+						"loop": "not-looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
 			"sid": 868345339009511,
 			"children": [
 				{
@@ -794,6 +821,20 @@
 						"instance-variable": "Lives",
 						"value": "-1"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 650172064743948,
+					"parameters": {
+						"audio-file": {
+							"path": "hurt"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 990963609645845
@@ -923,6 +964,20 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 217256861027446
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 820494820395117,
+					"parameters": {
+						"audio-file": {
+							"path": "game_over"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "wait",
